@@ -2,18 +2,18 @@ import java.util.ArrayList;
 
 public class RadioController implements RadioInterface {
 
-    // Atributo
-
+	// Atributo
+	
     private RadioModel radioModel;
 
     // Constructor
-
+    
     public RadioController() {
         this.radioModel = new RadioModel();
     }
 
     // Métodos
-
+    
     @Override
     public void setEncendido(boolean estado) {
         if(estado == true){
@@ -32,7 +32,7 @@ public class RadioController implements RadioInterface {
 
     @Override
     public void setEstacionBanda(float emisora, int banda) {
-
+        
     }
 
     @Override
@@ -70,5 +70,5 @@ public class RadioController implements RadioInterface {
         throw new UnsupportedOperationException("Unimplemented method 'recuperarEstacion'");
     }
 
-
+    
 }
